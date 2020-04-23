@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     } else {
 
-        const infura = 'https://mainnet.infura.io/v3/bb53409129cd49ef8809f668af522aac';
+        const infura = 'https://mainnet.infura.io/v3/dcb07049b32047279c8c0773bcf0e2d7';
         const web3 = new Web3(new Web3.providers.HttpProvider(infura));
         MyContract = new web3.eth.Contract(abi, address);
         myContractInstance = MyContract;
