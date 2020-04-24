@@ -123,7 +123,7 @@ $(document).ready(function () {
     //                setTimeout(function () {
     //                    var time = "2 minutes ago";
     //                    $.notify({
-    //                        icon: '/Content/assets/img/b1.png',
+    //                        icon: 'https://bullrun.live/Content/assets/img/b1.png',
     //                        title: "User " + event.returnValues._referral,
     //                        message: "Received " + event.returnValues._level == 1 ? level1 : event.returnValues._level == 2 ? level2 : event.returnValues._level == 3 ? level3 : level4 + " referral income from " + event.returnValues._user
     //                    }, {
@@ -155,7 +155,7 @@ $(document).ready(function () {
     //                setTimeout(function () {
     //                    var time = "2 minutes ago";
     //                    $.notify({
-    //                        icon: '/Content/assets/img/b1.png',
+    //                        icon: 'https://bullrun.live/Content/assets/img/b1.png',
     //                        title: "Congragulations! New User " + event.returnValues._user + " Registered ",
     //                        message: "Welcome to BullRun"
     //                    }, {
@@ -189,7 +189,7 @@ $(document).ready(function () {
     //                setTimeout(function () {
     //                    var time = "2 minutes ago";
     //                    $.notify({
-    //                        icon: '/Content/assets/img/b1.png',
+    //                        icon: 'https://bullrun.live/Content/assets/img/b1.png',
     //                        title: "User " + event.returnValues._receiver,
     //                        message: "Received " + event.returnValues._level == 1 ? pool1_price : event.returnValues._level == 2 ? pool2_price : event.returnValues._level == 3 ? pool3_price : event.returnValues._level == 4 ? pool4_price : event.returnValues._level == 5 ? pool5_price : event.returnValues._level == 6 ? pool6_price : event.returnValues._level == 7 ? pool7_price : event.returnValues._level == 8 ? pool8_price : event.returnValues._level == 9 ? pool9_price : pool10_price + " Pool income from " + event.returnValues._user
     //                    }, {
