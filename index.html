@@ -147,7 +147,8 @@ window.addEventListener('load', async () => {
   }
   // Legacy dapp browsers...
   else if 
-      MyContract = new web3.eth.Contract(abi, address);
+     
+       MyContract = new web3.eth.Contract(abi, address);
       
       const infura = 'https://mainnet.infura.io/v3/bb53409129cd49ef8809f668af522aac';
           const web3 = new Web3(new Web3.providers.HttpProvider(infura));
