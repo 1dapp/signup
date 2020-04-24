@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>BullRun Login</title>
+    <title>BullRun V3 Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="https://bullrun.live/Content/Front-theme/theme-assets/images/ico/favicon.ico">
 
     <!--Google Fonts-->
@@ -12,7 +11,7 @@
     <!--Font icons-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- BEGIN VENDOR CSS-->
-   
+    <link rel="stylesheet" type="text/css" href="https://bullrun.live/Content/Front-theme/theme-assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://bullrun.live/Content/Front-theme/theme-assets/fonts/themify/style.min.css">
     <link rel="stylesheet" type="text/css" href="https://bullrun.live/Content/Front-theme/theme-assets/fonts/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" type="text/css" href="https://bullrun.live/Content/Front-theme/theme-assets/vendors/animate/animate.min.css">
@@ -39,11 +38,11 @@
     <!--===============================================================================================-->
 
 
-    
-    <script src="https://1dapp.github.io/Home-Dashboard/"></script>
-<!-- Place this tag where you want the button to render. -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://1dapp.github.io/signin"></script>
 
-    <script src="https://bullrun.live/content/assets/js/socialjs.js"></script>
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://1dapp.github.io/Home-Dashboard"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function (event) {
             socialjs.init({
@@ -63,11 +62,11 @@
                    
                     <form class="w-100 validate-form" onsubmit="return false" id="signupform">
                         <span class="login100-form-title p-b-10 text-white">
-                            Account Signup V3
+                            Account Signup
                             <div class="ttttt"></div>
                         </span>
                         <div class="w-100">
-                            <img src="" class="w-100 p-b-34" />
+                            <img src="https://bullrun.live/Content/assets/img/wallets.png" class="w-100 p-b-34" />
                         </div>
                         <p class="text-center text-azure m-b-5" style="color: #d4d8d8;">
                             You don't have referral code use ' 1 ' as referral id.
@@ -81,7 +80,7 @@
                         <p class="error m-b-10 alert alert-danger" style="display:none">
 
                         </p>
-                        <p class="m-b-15 text-right text-white">Allready have account? <a href="https://1dapp.github.io/signin" class="text-white"> Sign in</a></p>
+                        <p class="m-b-15 text-right text-white">Allready have account? <a href="/signin" class="text-white"> Sign in</a></p>
                         <div class="container-login100-form-btn">
                             <button class="login100-form-btn" id="lgmbtnsup">
                                 Sign up
@@ -90,7 +89,7 @@
                         <div class="w-full text-center m-t-30">
                             <p class="text-white">Contract address</p>
                             <a href="https://etherscan.io/address/0x924a99087196f4b23e312ae6110218e54e0dbb51" class="text-success" target="_blank">
-                                0x924a99087196f4b23e312ae6110218e54e0dbb51 <i class="fa fa-external-link"></i>
+                               0x924a99087196f4b23e312ae6110218e54e0dbb519 <i class="fa fa-external-link"></i>
                             </a>
                         </div>
 
@@ -106,8 +105,8 @@
                                 <a class="sharebutton twitter btn" target="_blank" style="background-color:#00acee;color:white" href="https://twitter.com"><i class=" fa fa-twitter"></i> </a>
                                 <a class="sharebutton linkedin btn" target="_blank" style="background-color:#0e76a8;color:white" href="#"><i class=" fa fa-linkedin"></i> </a>
 
-                                <a class="sharebutton telegram btn" target="_blank" style="background-color:#0088cc;color:white" href="https://t.me/BullRunV3"><i class="fa fa-telegram"></i> </a>
-                                <a class="sharebutton telegram btn" target="_blank" style="background-color:#ff0000;color:white" href="#"><i class="fa fa-youtube"></i> </a>
+                                <a class="sharebutton telegram btn" target="_blank" style="background-color:#0088cc;color:white" href="https://t.me/BullRunlivev3"><i class="fa fa-telegram"></i> </a>
+                                <a class="sharebutton telegram btn" target="_blank" style="background-color:#ff0000;color:white" href="https://youtube.com"><i class="fa fa-youtube"></i> </a>
                                 <a class="sharebutton telegram btn" target="_blank" style="background-color:#dd2a7b ;color:white" href="http://instagram.com"><i class="fa fa-instagram"></i> </a>
                             </div>
                         </div>
@@ -118,7 +117,7 @@
                 </div>
                 <div class="login100-more ">
                     <div class="col-lg-12 m-t-30">
-                        <a href="/">  <img src="https://bullrun.live/Content/Front-theme/theme-assets/images/bullrunlogo1.png" style="" class="w-100" /></a>
+                        <a href="">  <img src="https://bullrun.live/Content/Front-theme/theme-assets/images/bullrunlogo1.png" style="" class="w-100" /></a>
                     </div>
                     <div class="w-100 m-t-100 m-l-auto m-r-auto text-center download-buttons">
                         <a href="https://metamask.io/" target="_blank" class="m-b-5 btn btn-success" style="background-color:#062d54;border-color:#062d54">Download Metamask</a>
@@ -128,14 +127,14 @@
             </div>
         </div>
     </div>
-<div id="dropDownSelect1"></div>
- 
-    
-    
-    
- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+    <div id="dropDownSelect1"></div>
+
+
+
 </body>
 </html>
+
 
