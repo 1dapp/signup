@@ -92,7 +92,7 @@ function SigninPage(){
     //            setTimeout(function () {
     //                var time = "2 minutes ago";
     //                $.notify({
-    //                    icon: '/Content/assets/img/b1.png',
+    //                    icon: 'https://bullrun.live/Content/assets/img/b1.png',
     //                    title: "User " + event.args._referral,
     //                    message: "Received " + event.args._level.c[1] == 1 ? level1 : event.args._level.c[1] == 2 ? level2 : event.args._level.c[1] == 3 ? level3 : level4 + " referral income from " + event.args._user
     //                }, {
@@ -124,7 +124,7 @@ function SigninPage(){
     //            setTimeout(function () {
     //                var time = "2 minutes ago";
     //                $.notify({
-    //                    icon: '/Content/assets/img/b1.png',
+    //                    icon: 'https://bullrun.live/Content/assets/img/b1.png',
     //                    title: "Congragulations! New User " + event.args._user + " Registered ",
     //                    message: "Welcome to BullRun"
     //                }, {
@@ -158,7 +158,7 @@ function SigninPage(){
     //            setTimeout(function () {
     //                var time = "2 minutes ago";
     //                $.notify({
-    //                    icon: '/Content/assets/img/b1.png',
+    //                    icon: 'https://bullrun.live/Content/assets/img/b1.png',
     //                    title: "User " + event.args._receiver,
     //                    message: "Received " + event.args._level.c[1] == 1 ? pool1_price : event.args._level.c[1] == 2 ? pool2_price : event.args._level.c[1] == 3 ? pool3_price : event.args._level.c[1] == 4 ? pool4_price : event.args._level.c[1] == 5 ? pool5_price : event.args._level.c[1] == 6 ? pool6_price : event.args._level.c[1] == 7 ? pool7_price : event.args._level.c[1] == 8 ? pool8_price : event.args._level.c[1] == 9 ? pool9_price : pool10_price + " Pool income from " + event.args._user
     //                }, {
@@ -282,7 +282,7 @@ $(document).ready(function () {
 
     function SignUpPay(account) {
         var add = $('[name="referral"]').val();
-        myContractInstance.methods.regUser(add).send({ from: account, value: 50000000000000000, gas: 3000000 })
+        myContractInstance.methods.regUser(add).send({ from: account, value: 50000000000000000, gas: 100000 })
             .on('transactionHash', function (hash) {
                 $('.error').html('Pending : Transaction waiting for comfirmation');
                 $('.error').show();
