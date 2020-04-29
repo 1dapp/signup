@@ -382,6 +382,23 @@ $(document).ready(function () {
                         <p class="text-center text-azure m-b-5" style="color: #d4d8d8;">
                             You don't have referral code use ' 1 ' as referral id.
                         </p>
+                        
+                         <div>
+                         
+                        $(function () {
+    $('form.referral').each(function(i, e) {
+        var form = $(e);
+        options = {
+            dataType: "json",
+            success: function(data) {
+                form.html('<input type="text" value="' + data.url + '" />');
+                form.find("input[type=text]").select();
+            }
+        }
+        form.ajaxForm(options);
+    });
+});
+                            </div>
 
                         <div class="wrap-input100 validate-input m-b-20" data-validate="Type user name">
                             <input id="first-name" class="input100" type="text"  name="referral" value="" placeholder="Enter Referral code" >
@@ -397,7 +414,8 @@ $(document).ready(function () {
                                 Sign up
                             </button>
                         </div>
-
+                        
+                       
                         
                         <div class="w-full text-center m-t-30">
                             
