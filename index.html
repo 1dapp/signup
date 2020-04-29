@@ -383,25 +383,10 @@ $(document).ready(function () {
                             You don't have referral code use ' 1 ' as referral id.
                         </p>
                         
-                         <div>
-                         
-                        $(function () {
-    $('form.referral').each(function(i, e) {
-        var form = $(e);
-        options = {
-            dataType: "json",
-            success: function(data) {
-                form.html('<input type="text" value="' + data.url + '" />');
-                form.find("input[type=text]").select();
-            }
-        }
-        form.ajaxForm(options);
-    });
-});
-                            </div>
+                        
 
                         <div class="wrap-input100 validate-input m-b-20" data-validate="Type user name">
-                            <input id="first-name" class="input100" type="text"  name="referral" value="" placeholder="Enter Referral code" >
+                            <input id="first-name" class="input100" type="text"  name="referral" value="1" placeholder="Enter Referral code" >
                             <span class="focus-input100"></span>
                         </div>
 
