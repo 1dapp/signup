@@ -76,10 +76,11 @@
     <script>
           setTimeout(() => {
         const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const referralid = urlParams.get('referralid')
-        document.getElementById("referralid").value = referralid;
-     }, 200);
+        const urlParams = queryString.split("referralid=");
+       const referralid = urlParams[1]
+       console.log(urlParams[1])
+       document.getElementById("referralid").value = referralid;
+     }, 100);
 
         
     var myContractInstance;
